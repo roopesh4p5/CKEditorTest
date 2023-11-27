@@ -1,0 +1,91 @@
+
+<app-nav></app-nav>
+<div class="text-center font-mono pt-10"   >
+  <div class="text-5xl font-extrabold p-5">CK Editor 5</div>
+  <p class="text-lg mb-10">
+    CKEditor is a tool used for easily creating and formatting text on websites.
+    It gives users an interface similar to a word processor, making it simple to
+    make text bold, italic, add images, and more. CKEditor is commonly used in
+    websites and applications where users need to input or edit text, offering a
+    convenient and user-friendly way to do so. It's open-source, meaning its
+    code is freely available for developers, and it can be customized and
+    extended to fit the needs of different projects.
+  </p>
+</div>
+<div class="flex justify-evenly items-center ">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4"
+  >
+    <div class="bg-white border shadow-2xl p-4 rounded-lg cursor-pointer" (click)="redirectToEditor('Classic Editor')">
+      <img
+        src="assets/img1.png"
+        alt="Card 1 Image"
+        class=" object-cover mb-4"
+      />
+      <h2 class="text-xl font-bold">Classic Editor</h2>
+      <p class="">
+        Classic editor is what most users traditionally learnt to associate with
+        a rich-text editor – a toolbar with an editing area placed in a specific
+        position on the page, usually as a part of a form that you use to submit
+        some content to the server.
+      </p>
+    </div>
+
+    <div class="bg-white border shadow-2xl p-4 rounded-lg cursor-pointer" (click)="redirectToEditor('Inline Editor')">
+      <img
+        src="assets/img2.png"
+        alt="Card 2 Image"
+        class=" object-cover mb-4"
+      />
+      <h2 class="text-xl font-bold">Inline Editor</h2>
+      <p class="">
+        Inline editor comes with a floating toolbar that becomes visible when
+        the editor is focused (e.g. by clicking it). Unlike classic editor,
+        inline editor does not render instead of the given element, it simply
+        makes it editable.
+      </p>
+    </div>
+
+    <div class="bg-white border shadow-2xl p-4 rounded-lg cursor-pointer" (click)="redirectToEditor('Balloon Editor')">
+      <img
+        src="assets/img3.png"
+        alt="Card 3 Image"
+        class=" object-cover mb-4"
+      />
+      <h2 class="text-xl font-bold">Balloon Editor</h2>
+      <p class="">
+        Balloon editor is very similar to inline editor. The difference between
+        them is that the toolbar appears in a balloon next to the selection
+        (when the selection is not empty).
+      </p>
+    </div>
+
+    <div class="bg-white border shadow-2xl p-4 rounded-lg cursor-pointer" (click)="redirectToEditor('Document Editor')">
+      <img
+        src="assets/img4.png"
+        alt="Card 4 Image"
+        class=" object-cover mb-4"
+      />
+      <h2 class="text-xl font-bold">Document Editor</h2>
+      <p class="">
+        The document editor is focused on rich-text editing experience similar
+        to the native word processors. It works best for creating documents
+        which are usually later printed or exported to PDF files.
+      </p>
+    </div>
+
+    <div class="bg-white border shadow-2xl p-4 rounded-lg cursor-pointer" (click)="redirectToEditor('Online Builder')">
+      <img
+        src="assets/img5.png"
+        alt="Card 5 Image"
+        class=" object-cover mb-4"
+      />
+      <h2 class="text-xl font-bold">Online Builder Path</h2>
+      <p class="">
+        This guide will teach you how to run your own CKEditor 5 instance. Below
+        you can find two unique paths describing the installation process.
+        Choose one (or both!) and start your CKEditor 5 journey!
+      </p>
+    </div>
+  </div>
+</div>
